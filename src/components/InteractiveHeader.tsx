@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaTiktok,
   FaFacebook,
+  FaInstagram,
 } from "react-icons/fa";
 import Image1 from "../assets/logo2.png";
 import Image2 from "../assets/logo2.png";
@@ -151,7 +152,15 @@ export const InteractiveHeader = () => {
               icon: <FaFacebook className="w-5 h-5 sm:w-6 sm:h-6" />,
               color: "text-blue-600",
               hoverColor: "hover:text-facebook-blue",
-              url: "",
+              url: "https://www.facebook.com/share/1CgknpAkHn/",
+              bgHover: "hover:bg-facebook-blue/10",
+            },
+            {
+              name: "ኢንስታግራም",
+              icon: <FaInstagram className="w-5 h-5 sm:w-6 sm:h-6" />,
+              color: "text-red-500",
+              hoverColor: "hover:text-facebook-blue",
+              url: "https://www.instagram.com/haymeteabrhame?igsh=MzJkM3oxcnBoaHg2&utm_source=ig_contact_invite",
               bgHover: "hover:bg-facebook-blue/10",
             },
           ].map((media, index) => (
@@ -191,7 +200,7 @@ export const InteractiveHeader = () => {
                 ></div>
               </div>
               <motion.span 
-                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute -bottom-8 transform -translate-x-1/2 text-white font-semibold items-center text-xs opacity-0 group-hover:opacity-100 transition-opacity"
                 initial={{ y: 10 }}
                 whileHover={{ y: 0 }}
               >
